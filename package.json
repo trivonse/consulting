@@ -7,10 +7,5 @@
     "compile:sass": "sass sass/main.scss css/style.css -w"
   },
   "author": "Jamshid",
-  "license": "ISC",
-  "devDependencies": {
-    "node-sass": "^9.0.0"
-  },
-  "dependencies": {
-  }
+  "license": "ISC"
 }

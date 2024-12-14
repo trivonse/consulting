@@ -4,7 +4,7 @@
   "description": "Portfolio website",
   "main": "index.js",
   "scripts": {
-    "compile:sass": "node-sass sass/main.scss css/style.css -w"
+    "compile:sass": "sass sass/main.scss css/style.css -w"
   },
   "author": "Jamshid",
   "license": "ISC",

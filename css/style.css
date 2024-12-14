@@ -173,6 +173,75 @@ body {
     padding: 8px 16px;
   }
 }
+.about {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: 50%;
+}
+.about .list {
+  width: 80%;
+  margin: 0 auto;
+}
+.about .list p {
+  padding: 6px 2px;
+}
+.about .list ul {
+  padding: 0 20px;
+}
+
+.learn {
+  display: flex;
+  justify-content: space-between;
+}
+.learn .img {
+  width: 50%;
+}
+.learn .img img {
+  width: 100%;
+}
+.learn .more {
+  width: 50%;
+  display: flex;
+  padding: 0px 5%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap: 2rem;
+}
+.learn .more p {
+  color: #1e1e1e;
+  font-size: 22px;
+  font-weight: 100;
+}
+.learn .more h2 {
+  width: 480px;
+  font-size: 44px;
+  font-weight: 400;
+}
+.learn .more button {
+  width: 140px;
+  height: 40px;
+  background-color: white;
+  border: 2px solid #7823dc;
+  font-size: 16px;
+}
+.learn .more button:hover {
+  transition: all ease-in-out 0.3s;
+  background-color: #7823dc;
+  color: white;
+}
+
+.section_container {
+  width: 50%;
+}
+
+.section_img {
+  width: 100%;
+  height: calc(100vh - 60px);
+  object-fit: cover;
+}
+
 .cta {
   background-color: #323232;
   display: flex;
@@ -323,7 +392,7 @@ footer .container_footer .ul3 li a {
 }
 @media (max-width: 480px) {
   footer .container_footer {
-    width: 95%;
+    width: 98%;
     padding: 15px;
   }
   footer .ul1,

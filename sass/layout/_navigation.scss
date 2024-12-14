@@ -1,0 +1,224 @@
+.navbar {
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 2rem;
+  z-index: 10;
+
+  @media only screen and (max-width: $bp-smallest) {
+    bottom: 3rem;
+  }
+}
+
+.navigation {
+  padding: 1rem;
+  border-radius: 2.4rem;
+  border: 1px solid rgba($color-white, 0.1);
+  list-style: none;
+  display: flex;
+  gap: 1.2rem;
+  backdrop-filter: blur(8px);
+
+  @include cardBackShadow;
+
+  &__item {
+    &:link, &:visited {
+      display: inline-block;
+      padding: 1rem;
+      border-radius: 1.2rem;
+      border: 1px solid rgba($color-white, 0.1);
+      transition: all 0.2s ease-out;
+      position: relative;
+    }
+
+    &-breaker {
+      width: 1px;
+      height: 3rem;
+      margin-top: auto;
+      margin-bottom: auto;
+      background-color: rgba($color-white, 0.1);
+    }
+
+    &--active {
+      transform: translateY(-0.3rem);
+      &::after {
+        content: "";
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: -1rem;
+        width: 1.6rem;
+        height: 0.3rem;
+        border-radius: 2rem;
+        background-color: rgba($color-white, 0.1);
+      }
+    }
+
+    &::before {
+      position: absolute;
+      top: -3.2rem;
+      opacity: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      border: 1px solid rgba($color-white, 0.1);
+      padding: 0.4rem 0.8rem;
+      border-radius: 0.8rem;
+      transition: all 0.2s ease-out;
+      pointer-events: none;
+      @include cardBackShadow;
+    }
+
+    &:hover {
+      cursor: pointer;
+      transform: translateY(-0.3rem);
+
+      &::before {
+        top: -4.2rem;
+        opacity: 1;
+      }
+    }
+
+    &--first {
+      &:hover, &:active {
+        background-color: $color-orange;
+      }
+
+      &::before {
+        content: "Home"
+      }
+    }
+
+    &--second {
+      &:hover, &:active {
+        background-color: $color-purple;
+      }
+
+      &::before {
+        content: "About me"
+      }
+    }
+
+    &--third {
+      &:hover, &:active {
+        background-color: $color-red;
+      }
+
+      &::before {
+        content: "Projects"
+      }
+    }
+
+    &--fourth {
+      &:hover, &:active {
+        background-color: $color-blue;
+      }
+
+      &::before {
+        content: "Articles"
+      }
+    }
+
+    &--fifth {
+      &:hover, &:active {
+        background-color: $color-green;
+      }
+
+      &::before {
+        content: "Books"
+      }
+    }
+
+    &--sixth {
+      &:hover, &:active {
+        background-color: $color-pink;
+      }
+
+      &::before {
+        content: "Readings"
+      }
+    }
+
+    &--seventh {
+      &:hover, &:active {
+        background-color: $color-blue;
+      }
+
+      &::before {
+        content: "Setup"
+      }
+    }
+
+    &--eighth {
+      &:hover, &:active {
+        background-color: $color-orange;
+      }
+
+      &::before {
+        content: "@sevbo2003"
+      }
+    }
+
+    &--nineth {
+      &:hover, &:active {
+        background-color: $color-purple;
+      }
+
+      &::before {
+        content: "@yomon_jiyan"
+      }
+    }
+
+    &--tenth {
+      &:hover, &:active {
+        background-color: $color-red;
+      }
+
+      &::before {
+        content: "@abdusamad-malikov"
+      }
+    }
+
+    &--active.navigation__item--first {
+      background-color: $color-orange;
+    }
+
+    &--active.navigation__item--second {
+      background-color: $color-purple;
+    }
+
+    &--active.navigation__item--third {
+      background-color: $color-red;
+    }
+
+    &--active.navigation__item--fourth {
+      background-color: $color-blue;
+    }
+
+    &--active.navigation__item--fifth {
+      background-color: $color-green;
+    }
+
+    &--active.navigation__item--sixth {
+      background-color: $color-pink;
+    }
+
+    &--active.navigation__item--seventh {
+      background-color: $color-blue;
+    }
+
+    img {
+      width: 2.4rem;
+    }
+  }
+
+  li {
+    &:nth-child(8),
+    &:nth-child(9),
+    &:nth-child(10),
+    &:nth-child(11) {
+      @media only screen and (max-width: $bp-smallest) {
+        display: none;
+      }
+    } 
+  }
+}

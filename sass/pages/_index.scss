@@ -91,6 +91,10 @@ body {
   color: #333;
   padding: 10px;
   display: block;
+
+  &:hover{
+    color: #7823dc;
+  }
 }
 
 /* Dropdown */
@@ -226,6 +230,7 @@ body {
       font-size: 44px;
       font-weight: 400;
     }
+
 
     button{
       width: 140px;
@@ -454,5 +459,44 @@ footer {
     .ul2 li {
       margin-bottom: 10px;
     }
+  }
+}
+
+
+.index_globbid{
+  margin: 3rem auto;
+  height: calc(100vh - 100px);
+
+  p{
+    width: 80%;
+    margin: 0 auto; 
+  }
+  .index_img{
+    margin: 1rem auto;
+    width: 100%;
+
+    img{
+      width: 100%;
+    }
+  }
+
+  .text_section{
+    width: 90%;
+    margin: 0 auto;
+     display: flex;
+     justify-content: space-between;
+
+     div{
+      width: 32%;
+      p{
+        width: 100%;
+        margin: 0.3rem ;
+      }
+      .index_section_title{
+        font-size: 18px;
+        font-weight: 900;
+        margin: 5px 0;
+      }
+     }
   }
 }

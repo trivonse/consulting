@@ -1,0 +1,40 @@
+
+.contact_hero{
+   width: 90%;
+   height: calc(90vh - 100px);
+   margin:50px auto;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   gap: 2rem;
+
+   .img{
+      width: 40%;
+      img{
+         width: 100%;
+      }
+   }
+
+   .contact_hero_text{
+      width: 60%;
+      padding:2px 2rem;
+
+      .contact_number{
+         display: flex;
+         justify-content: space-between;
+         div{
+            width: 50%;
+            margin: 1rem;
+            .contact_title{
+               font-size: 20px;
+               color:#7823dc;
+               font-weight: 600;
+            }
+            p{
+               margin: 5px;
+               font-size: 16px;
+            }
+         }
+      }
+   }
+}

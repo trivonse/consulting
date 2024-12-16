@@ -168,6 +168,31 @@ body {
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
+.button {
+  position: absolute;
+  top: 60%;
+  left: 40%;
+  color: white;
+  font-size: 2vw;
+  font-weight: bold;
+  text-align: end;
+  padding: 10px;
+  width: 150px;
+  background-color: gray;
+  border: 2px solid green;
+  height: 40px;
+}
+.button button {
+  width: 142px;
+  height: 32px;
+  background-color: #383434;
+  color: white;
+  transform: translate(-6%, -25%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 @media (max-width: 600px) {
   .hero-text {
     font-size: 4vw;
@@ -550,8 +575,9 @@ footer .container_footer .ul3 li a {
 }
 .contact_hero .contact_hero_text .contact_number div .contact_title {
   font-size: 20px;
-  color: #7823dc;
-  font-weight: 600;
+  color: #47546e;
+  font-weight: 900;
+  letter-spacing: 5px;
 }
 .contact_hero .contact_hero_text .contact_number div p {
   margin: 5px;

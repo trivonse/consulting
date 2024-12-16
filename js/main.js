@@ -18,7 +18,8 @@ const translations = {
     resheniya: "Yechimlar",
     expertiza: "Ekspertiza",
     kontakt: "Kontakt",
-    text_hero: "Kompleksni sodda qilib, biz sizning muvaffaqiyatingizni yaratamiz.",
+    text_hero:
+      "Kompleksni sodda qilib, biz sizning muvaffaqiyatingizni yaratamiz.",
   },
 };
 

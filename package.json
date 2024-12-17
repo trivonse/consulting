@@ -1,7 +1,7 @@
 {
-  "name": "abdusamad.uz",
+  "name": "globbid_cunsulting",
   "version": "1.0.0",
-  "description": "Portfolio website",
+  "description": "Consulting",
   "main": "index.js",
   "scripts": {
     "compile:sass": "sass sass/main.scss css/style.css -w"
